@@ -125,17 +125,19 @@ header h1 {
     padding: 20px;
 }
 
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.top-heading {
+    padding-left: 20px;
 }
 
-.about div h2 {
-    
+.about, .courses, .photo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.about h2, .courses h2, .photo h2 {
+    background-color: var(--red);
+}
 
 footer {
     background: var(--color);
@@ -194,6 +196,16 @@ footer {
     .navigation.open {
     flex-direction: row;
   }
+    .home{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .courses {
+        grid-column: span 2;
+    }
+
     footer{
         border: none;
     }
