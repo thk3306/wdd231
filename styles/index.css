@@ -151,6 +151,7 @@ footer {
 }
 
 footer p {
+    padding-top: 10px;
     margin: 0;
     grid-column: span 2;
     text-align: center;
@@ -169,6 +170,7 @@ nav.sociallinks {
     align-items: center;
     gap: 20px;
     padding-bottom: 10px;
+    border-bottom: 1px solid white;
 }
 
 @media (max-width: 800px) {
@@ -181,10 +183,7 @@ nav.sociallinks {
     top: 15px;
     left: 10px;
   }
-  .header-container span {
-    font-size: 2rem;
-    padding-left: 100px;
-  }
+    
   header nav {
     width: 100%;
   }
@@ -197,8 +196,8 @@ nav.sociallinks {
   .navigation li {
     width: 100%;
   }
-  
 }
+
 
 @media screen and (min-width:800px){
     main{
