@@ -76,5 +76,53 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+	const main = document.querySelector('.coursecontent');
+
+	const coursesSection = document.querySelector('.courses');
+
+	const allButton = document.getElementById('all');
+	const wddButton = document.getElementById('wdd');
+	const cseButton = document.getElementById('cse');
+
+	function displayCourse (course) {
+		const courseElement = document.createElement('article');
+		courseElement.classList.add('course');
+		courseElement.innerHTML = `${course.subject} ${course.number}`
+		return courseElement;
+	}
+	allButton.addEventListener('click', () => {
+		main.innerHTML = '';
+		courses.forEach(course => {
+			const courseElement = displayCourse(course);
+			main.appendChild(courseElement);
+		});
+	});
+
+	wddButton.addEventListener('click', () => {
+		main.innerHTML = '';
+		courses
+			.filter(course => course.subject === 'WDD')
+			.forEach(course => {
+				const
+				courseElement = displayCourse(course);
+				main.appendChild(courseElement);
+			})
+		});
+
+	cseButton.addEventListener('click', () => {
+		main.innerHTML = '';
+		courses
+			.filter(course => course.subject === 'CSE')
+			.forEach(course => {
+				const courseElement = displayCourse(course);
+				main.appendChild(courseElement);
+			})
+		});
+
+// Initially display all courses
+	courses.forEach(course => {
+		const courseElement = displayCourse(course);
+		main.appendChild(courseElement);
+	});
 
