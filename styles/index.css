@@ -10,9 +10,10 @@ body {
     color: white;
 }
   
-img {
+main img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16/9;
 }
 
 figure {
@@ -47,19 +48,19 @@ button#menu {
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "❌";
+    content: "❌";
 }
 
 .navigation {
-	list-style: none;
-	display: none;
-	flex-wrap: wrap;
-	background-color: var(--color);
-	align-items: center;
+    list-style: none;
+    display: none;
+    flex-wrap: wrap;
+    background-color: var(--color);
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -71,7 +72,7 @@ button#menu {
 }
 
 .navigation li {
-	flex: 1 1 auto;
+    flex: 1 1 auto;
     text-align: center;
     margin: 10px;
     padding: 0;
@@ -79,16 +80,16 @@ button#menu {
 }
 
 .navigation a {
-	display: block;
-	color: #eee;
-	padding: 0.75rem;
-	text-decoration: none;
-	text-align: center;
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .navigation a:hover {
-	font-weight: 700;
-	color: var(--red);
+    font-weight: 700;
+    color: var(--red);
 }
 
 .header-container {
@@ -152,13 +153,32 @@ header span {
     border-radius: 5px;
 }
 
+div.coursecontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
 article.course {
     background-color: white;
     color: var(--color);
+    width: 250px;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 50px;
+}
+
+article.course.completed::after {
+    background-color: #d4edda;
+    content: "✓ Completed";
+    color: #155724; 
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 footer {
@@ -227,13 +247,13 @@ nav.sociallinks {
     }
     
     #menu {
-		display: none;
-	}
+        display: none;
+    }
 
     .navigation {
-		flex-direction: row;
+        flex-direction: row;
         display: flex;
-	}
+    }
     .header-container span {
         font-size: 2.5rem;
         padding-left: 0;

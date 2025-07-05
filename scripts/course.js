@@ -80,6 +80,7 @@ const courses = [
 	const main = document.querySelector('.coursecontent');
 
 	const coursesSection = document.querySelector('.courses');
+    const creditTotal = document.getElementById('credittotal');
 
 	const allButton = document.getElementById('all');
 	const wddButton = document.getElementById('wdd');
@@ -91,38 +92,51 @@ const courses = [
 		courseElement.innerHTML = `${course.subject} ${course.number}`
 		return courseElement;
 	}
-	allButton.addEventListener('click', () => {
-		main.innerHTML = '';
-		courses.forEach(course => {
-			const courseElement = displayCourse(course);
-			main.appendChild(courseElement);
-		});
-	});
+    allButton.addEventListener('click', () => {
+        main.innerHTML = '';
+        courses.forEach(course => {
+            const courseElement = displayCourse(course);
+            if (course.completed) {
+                courseElement.classList.add('completed');
+            }
+            main.appendChild(courseElement);
+        });
+        creditTotal.textContent = `The Total Number of Credits of the Courses Listed below is ${courses.reduce((total, course) => total + course.credits, 0)}`;
+    });
 
-	wddButton.addEventListener('click', () => {
-		main.innerHTML = '';
-		courses
-			.filter(course => course.subject === 'WDD')
-			.forEach(course => {
-				const
-				courseElement = displayCourse(course);
-				main.appendChild(courseElement);
-			})
-		});
+    wddButton.addEventListener('click', () => {
+        main.innerHTML = '';
+        const filteredCourses = courses.filter(course => course.subject === 'WDD');
+        filteredCourses.forEach(course => {
+            const courseElement = displayCourse(course);
+            if (course.completed) {
+                courseElement.classList.add('completed');
+            }
+            main.appendChild(courseElement);
+        });
+        creditTotal.textContent = `The Total Number of Credits of the Courses Listed below is ${filteredCourses.reduce((total, course) => total + course.credits, 0)}`;
+    });
 
-	cseButton.addEventListener('click', () => {
-		main.innerHTML = '';
-		courses
-			.filter(course => course.subject === 'CSE')
-			.forEach(course => {
-				const courseElement = displayCourse(course);
-				main.appendChild(courseElement);
-			})
-		});
+    cseButton.addEventListener('click', () => {
+        main.innerHTML = '';
+        const filteredCourses = courses.filter(course => course.subject === 'CSE');
+        filteredCourses.forEach(course => {
+            const courseElement = displayCourse(course);
+            if (course.completed) {
+                courseElement.classList.add('completed');
+            }
+            main.appendChild(courseElement);
+        });
+        creditTotal.textContent = `The Total Number of Credits of the Courses Listed below is ${filteredCourses.reduce((total, course) => total + course.credits, 0)}`;
+    });
 
-// Initially display all courses
-	courses.forEach(course => {
-		const courseElement = displayCourse(course);
-		main.appendChild(courseElement);
-	});
+    main.innerHTML = '';
+    courses.forEach(course => {
+        const courseElement = displayCourse(course);
+        if (course.completed) {
+            courseElement.classList.add('completed');
+        }
+        main.appendChild(courseElement);
+    });
+    creditTotal.textContent = `The Total Number of Credits of the Courses Listed below is ${courses.reduce((total, course) => total + course.credits, 0)}`;
 
