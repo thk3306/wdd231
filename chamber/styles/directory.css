@@ -205,7 +205,7 @@ a {
 }
 
 .list section:nth-child(even) {
-    background-color: #bbb;
+    background-color: var(--red);
 }
 
 #grid:hover, #list:hover {
