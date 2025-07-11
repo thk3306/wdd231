@@ -27,6 +27,7 @@ const displayMembers = (members) => {
         const membershipLevel = document.createElement('p');
         const description = document.createElement('p');
         const contactEmail = document.createElement('p');
+        
         name.textContent = member.name;
         image.setAttribute('src', `${member.image}`);
         image.setAttribute('alt', `Image of ${member.name}`);
@@ -40,7 +41,7 @@ const displayMembers = (members) => {
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
         description.textContent = `Description: ${member.description}`;
         contactEmail.textContent = `Contact Email: ${member.contactEmail}`;
-        card.classList.add('grid');
+        
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(address);
@@ -52,7 +53,11 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     })
 }
-getMemberData();
+
+getMemberData().then(() => {
+    cards.classList.add('grid');
+    gridButton.classList.add('active');
+});
 
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
@@ -60,9 +65,13 @@ const listButton = document.querySelector('#list');
 gridButton.addEventListener('click', () => {
     cards.classList.remove('list');
     cards.classList.add('grid');
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
 });
 
 listButton.addEventListener('click', () => {
     cards.classList.remove('grid');
     cards.classList.add('list');
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
 });
