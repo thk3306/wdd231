@@ -4,7 +4,7 @@
         "address": "19-23 Taranaki Street, Wellington 6011, New Zealand",
         "phone": "+64 4 819 4800",
         "website": "https://www.xero.com/nz/",
-        "image": "https://www.xero.com/static/images/logos/xero-logo.svg",
+        "image": "images/xero.png",
         "membershipLevel": 3,
         "description": "Cloud-based accounting software for small businesses.",
         "contactEmail": "info@xero.com"
@@ -14,7 +14,7 @@
         "address": "109 Fanshawe Street, Auckland 1010, New Zealand",
         "phone": "+64 9 374 9000",
         "website": "https://www.fonterra.com/nz/en.html",
-        "image": "https://www.fonterra.com/content/dam/fonterra-public-website/images/logos/fonterra-logo.svg",
+        "image": "images/fonterra.webp",
         "membershipLevel": 2,
         "description": "Global dairy nutrition company owned by 10,000 New Zealand farmers.",
         "contactEmail": "info@fonterra.com"
@@ -24,7 +24,7 @@
         "address": "15 Maurice Paykel Place, East Tamaki, Auckland 2013, New Zealand",
         "phone": "+64 9 574 0100",
         "website": "https://www.fphcare.com/nz/",
-        "image": "https://www.fphcare.com/contentassets/6e2c1b9b2b7e4c6e8e9b7e2e2e2e2e2e/fph-logo.svg",
+        "image": "images/fisher.webp",
         "membershipLevel": 1,
         "description": "Designs and manufactures products for respiratory care and acute care.",
         "contactEmail": "info@fphcare.co.nz"
@@ -34,7 +34,7 @@
         "address": "2 Market Lane, Wellington 6011, New Zealand",
         "phone": "+64 4 803 2650",
         "website": "https://www.trademe.co.nz/",
-        "image": "https://www.trademe.co.nz/images/tm-logo.svg",
+        "image": "images/trademe.png",
         "membershipLevel": 2,
         "description": "New Zealand's largest online marketplace and classified advertising platform.",
         "contactEmail": "info@trademe.co.nz"
@@ -44,7 +44,7 @@
         "address": "12 Madden Street, Auckland 1010, New Zealand",
         "phone": "+64 9 222 6380",
         "website": "https://www.rocketlabusa.com/",
-        "image": "https://www.rocketlabusa.com/assets/Uploads/rocketlab-logo.svg",
+        "image": "images/rocketlab.webp",
         "membershipLevel": 3,
         "description": "Aerospace manufacturer and small satellite launch service provider.",
         "contactEmail": "info@rocketlab.co.nz"
@@ -54,7 +54,7 @@
         "address": "3 Queens Wharf, Wellington 6011, New Zealand",
         "phone": "+64 4 471 2329",
         "website": "https://z.co.nz/",
-        "image": "https://z.co.nz/assets/img/z-logo.svg",
+        "image": "images/z.webp",
         "membershipLevel": 1,
         "description": "Retailer of fuel and energy services across New Zealand.",
         "contactEmail": "info@z.co.nz"
@@ -64,7 +64,7 @@
         "address": "Level 4, 1 Nelson Street, Auckland 1010, New Zealand",
         "phone": "+64 9 377 7300",
         "website": "https://www.icebreaker.com/en-nz/",
-        "image": "https://www.icebreaker.com/on/demandware.static/-/Sites-icebreaker-Library/default/dw4e1e1e1e/images/icebreaker-logo.svg",
+        "image": "images/icebreaker.webp",
         "membershipLevel": 2,
         "description": "Merino wool outdoor and performance clothing company.",
         "contactEmail": "info@icebreaker.com"
