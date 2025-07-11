@@ -155,24 +155,25 @@ section img {
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
 
-	section {
-		text-align: center;
-        padding: 0.5rem;
-        background-color: var(--red);
-        
-		& > * {
-			margin: 0.1rem;
-		}
-	}
-    img {
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-	}
+.grid section {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--red);
+}
+
+.grid section > * {
+    margin: 0.1rem;
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
 }
 
 a {
@@ -180,35 +181,35 @@ a {
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
 
-	section {
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
 
-		& > * {
-			margin: 0 1rem;
-		}
+.list section > * {
+    margin: 0 1rem;
+}
 
-		img {
-			display: none;
-		}
+.list section img {
+    display: none;
+}
 
-		h3 {
-			font-size: 1rem;
-		}
+.list section h3 {
+    font-size: 1rem;
+}
 
-		&:nth-child(even) {
-			background-color: #bbb;
-		}
-	}
+.list section:nth-child(even) {
+    background-color: #bbb;
 }
 
 #grid:hover, #list:hover {
-    background-color: #b8142e; /* Darker red on hover */
+    background-color: #b8142e; 
 }
 
 #grid.active, #list.active {
