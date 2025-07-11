@@ -28,7 +28,7 @@ const displayMembers = (members) => {
         const description = document.createElement('p');
         const contactEmail = document.createElement('p');
         name.textContent = member.name;
-        image.setAttribute('src', `images/${member.image}`);
+        image.setAttribute('src', `${member.image}`);
         image.setAttribute('alt', `Image of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200');
@@ -40,6 +40,7 @@ const displayMembers = (members) => {
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
         description.textContent = `Description: ${member.description}`;
         contactEmail.textContent = `Contact Email: ${member.contactEmail}`;
+        card.classList.add('grid');
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(address);
