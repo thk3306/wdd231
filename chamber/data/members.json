@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Mountain Tech Solutions",
+        "address": "123 Summit Ave, Provo, UT 84604",
+        "phone": "801-555-1234",
+        "website": "https://www.mountaintech.com",
+        "image": "mountaintech.png",
+        "membershipLevel": 3,
+        "description": "Leading provider of cloud-based software solutions.",
+        "contactEmail": "info@mountaintech.com"
+    },
+    {
+        "name": "Valley Fresh Foods",
+        "address": "456 Orchard Rd, Orem, UT 84057",
+        "phone": "801-555-5678",
+        "website": "https://www.valleyfreshfoods.com",
+        "image": "valleyfresh.png",
+        "membershipLevel": 2,
+        "description": "Local distributor of organic produce and groceries.",
+        "contactEmail": "contact@valleyfreshfoods.com"
+    },
+    {
+        "name": "Pioneer Financial Group",
+        "address": "789 Main St, Lehi, UT 84043",
+        "phone": "801-555-9012",
+        "website": "https://www.pioneerfinancial.com",
+        "image": "pioneerfinancial.png",
+        "membershipLevel": 1,
+        "description": "Financial planning and investment services.",
+        "contactEmail": "support@pioneerfinancial.com"
+    },
+    {
+        "name": "Wasatch Outdoor Gear",
+        "address": "321 Trail Blvd, Springville, UT 84663",
+        "phone": "801-555-3456",
+        "website": "https://www.wasatchoutdoor.com",
+        "image": "wasatchoutdoor.png",
+        "membershipLevel": 2,
+        "description": "Retailer of outdoor and camping equipment.",
+        "contactEmail": "sales@wasatchoutdoor.com"
+    },
+    {
+        "name": "Utah Creative Studios",
+        "address": "654 Artisans Ln, Lindon, UT 84042",
+        "phone": "801-555-7890",
+        "website": "https://www.utahcreativestudios.com",
+        "image": "utahcreative.png",
+        "membershipLevel": 3,
+        "description": "Full-service marketing and design agency.",
+        "contactEmail": "hello@utahcreativestudios.com"
+    },
+    {
+        "name": "Beehive Bookstore",
+        "address": "987 Library Dr, Pleasant Grove, UT 84062",
+        "phone": "801-555-2345",
+        "website": "https://www.beehivebooks.com",
+        "image": "beehivebookstore.png",
+        "membershipLevel": 1,
+        "description": "Independent bookstore with community events.",
+        "contactEmail": "events@beehivebooks.com"
+    },
+    {
+        "name": "Cascade Fitness Center",
+        "address": "159 Fitness Way, American Fork, UT 84003",
+        "phone": "801-555-6789",
+        "website": "https://www.cascadefitness.com",
+        "image": "cascadefitness.png",
+        "membershipLevel": 2,
+        "description": "Modern gym with classes and personal training.",
+        "contactEmail": "info@cascadefitness.com"
+    }
+]
