@@ -1,72 +1,72 @@
 [
     {
-        "name": "Mountain Tech Solutions",
-        "address": "123 Summit Ave, Provo, UT 84604",
-        "phone": "801-555-1234",
-        "website": "https://www.mountaintech.com",
-        "image": "mountaintech.png",
+        "name": "Xero Limited",
+        "address": "19-23 Taranaki Street, Wellington 6011, New Zealand",
+        "phone": "+64 4 819 4800",
+        "website": "https://www.xero.com/nz/",
+        "image": "https://www.xero.com/static/images/logos/xero-logo.svg",
         "membershipLevel": 3,
-        "description": "Leading provider of cloud-based software solutions.",
-        "contactEmail": "info@mountaintech.com"
+        "description": "Cloud-based accounting software for small businesses.",
+        "contactEmail": "info@xero.com"
     },
     {
-        "name": "Valley Fresh Foods",
-        "address": "456 Orchard Rd, Orem, UT 84057",
-        "phone": "801-555-5678",
-        "website": "https://www.valleyfreshfoods.com",
-        "image": "valleyfresh.png",
+        "name": "Fonterra Co-operative Group",
+        "address": "109 Fanshawe Street, Auckland 1010, New Zealand",
+        "phone": "+64 9 374 9000",
+        "website": "https://www.fonterra.com/nz/en.html",
+        "image": "https://www.fonterra.com/content/dam/fonterra-public-website/images/logos/fonterra-logo.svg",
         "membershipLevel": 2,
-        "description": "Local distributor of organic produce and groceries.",
-        "contactEmail": "contact@valleyfreshfoods.com"
+        "description": "Global dairy nutrition company owned by 10,000 New Zealand farmers.",
+        "contactEmail": "info@fonterra.com"
     },
     {
-        "name": "Pioneer Financial Group",
-        "address": "789 Main St, Lehi, UT 84043",
-        "phone": "801-555-9012",
-        "website": "https://www.pioneerfinancial.com",
-        "image": "pioneerfinancial.png",
+        "name": "Fisher & Paykel Healthcare",
+        "address": "15 Maurice Paykel Place, East Tamaki, Auckland 2013, New Zealand",
+        "phone": "+64 9 574 0100",
+        "website": "https://www.fphcare.com/nz/",
+        "image": "https://www.fphcare.com/contentassets/6e2c1b9b2b7e4c6e8e9b7e2e2e2e2e2e/fph-logo.svg",
         "membershipLevel": 1,
-        "description": "Financial planning and investment services.",
-        "contactEmail": "support@pioneerfinancial.com"
+        "description": "Designs and manufactures products for respiratory care and acute care.",
+        "contactEmail": "info@fphcare.co.nz"
     },
     {
-        "name": "Wasatch Outdoor Gear",
-        "address": "321 Trail Blvd, Springville, UT 84663",
-        "phone": "801-555-3456",
-        "website": "https://www.wasatchoutdoor.com",
-        "image": "wasatchoutdoor.png",
+        "name": "Trade Me",
+        "address": "2 Market Lane, Wellington 6011, New Zealand",
+        "phone": "+64 4 803 2650",
+        "website": "https://www.trademe.co.nz/",
+        "image": "https://www.trademe.co.nz/images/tm-logo.svg",
         "membershipLevel": 2,
-        "description": "Retailer of outdoor and camping equipment.",
-        "contactEmail": "sales@wasatchoutdoor.com"
+        "description": "New Zealand's largest online marketplace and classified advertising platform.",
+        "contactEmail": "info@trademe.co.nz"
     },
     {
-        "name": "Utah Creative Studios",
-        "address": "654 Artisans Ln, Lindon, UT 84042",
-        "phone": "801-555-7890",
-        "website": "https://www.utahcreativestudios.com",
-        "image": "utahcreative.png",
+        "name": "Rocket Lab",
+        "address": "12 Madden Street, Auckland 1010, New Zealand",
+        "phone": "+64 9 222 6380",
+        "website": "https://www.rocketlabusa.com/",
+        "image": "https://www.rocketlabusa.com/assets/Uploads/rocketlab-logo.svg",
         "membershipLevel": 3,
-        "description": "Full-service marketing and design agency.",
-        "contactEmail": "hello@utahcreativestudios.com"
+        "description": "Aerospace manufacturer and small satellite launch service provider.",
+        "contactEmail": "info@rocketlab.co.nz"
     },
     {
-        "name": "Beehive Bookstore",
-        "address": "987 Library Dr, Pleasant Grove, UT 84062",
-        "phone": "801-555-2345",
-        "website": "https://www.beehivebooks.com",
-        "image": "beehivebookstore.png",
+        "name": "Z Energy",
+        "address": "3 Queens Wharf, Wellington 6011, New Zealand",
+        "phone": "+64 4 471 2329",
+        "website": "https://z.co.nz/",
+        "image": "https://z.co.nz/assets/img/z-logo.svg",
         "membershipLevel": 1,
-        "description": "Independent bookstore with community events.",
-        "contactEmail": "events@beehivebooks.com"
+        "description": "Retailer of fuel and energy services across New Zealand.",
+        "contactEmail": "info@z.co.nz"
     },
     {
-        "name": "Cascade Fitness Center",
-        "address": "159 Fitness Way, American Fork, UT 84003",
-        "phone": "801-555-6789",
-        "website": "https://www.cascadefitness.com",
-        "image": "cascadefitness.png",
+        "name": "Icebreaker",
+        "address": "Level 4, 1 Nelson Street, Auckland 1010, New Zealand",
+        "phone": "+64 9 377 7300",
+        "website": "https://www.icebreaker.com/en-nz/",
+        "image": "https://www.icebreaker.com/on/demandware.static/-/Sites-icebreaker-Library/default/dw4e1e1e1e/images/icebreaker-logo.svg",
         "membershipLevel": 2,
-        "description": "Modern gym with classes and personal training.",
-        "contactEmail": "info@cascadefitness.com"
+        "description": "Merino wool outdoor and performance clothing company.",
+        "contactEmail": "info@icebreaker.com"
     }
 ]
