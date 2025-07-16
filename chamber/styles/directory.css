@@ -88,6 +88,11 @@ button#menu {
     text-align: center;
 }
 
+.navigation .current-page {
+    font-weight: bold;
+    color: var(--red);
+}
+
 .navigation a:hover {
     font-weight: 700;
     color: var(--red);
