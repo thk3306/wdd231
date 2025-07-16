@@ -90,7 +90,11 @@ button#menu {
 
 .navigation .current-page {
     font-weight: bold;
-    color: var(--red);
+    color: white;
+}
+
+.navigation .current-page::after {
+    content: "📍";
 }
 
 .navigation a:hover {
