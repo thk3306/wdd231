@@ -89,12 +89,9 @@ button#menu {
 }
 
 .navigation .current-page {
-    font-weight: bold;
     color: white;
-}
-
-.navigation .current-page::after {
-    content: "📍";
+    background-color: var(--red);
+    border-radius: 5px;
 }
 
 .navigation a:hover {
