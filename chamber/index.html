@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emil Roding's WDD 231 | Auckland Chamber of Commerce Project">
+    <meta name="author" content="Emil's Web Development Class WDD 231 Auckland Chamber of Commerce Project">
+    <title>Auckland Chamber of Commerce Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Auckland Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover and connect with businesses in the Auckland Chamber of Commerce directory.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/thk3306/wdd231/main/images/chamber-logo.png">
+    <meta property="og:url" content="https://thk3306.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.svg" alt="New Zealand Flag" id="logo" loading="lazy">
+            <span>Auckland Chamber of Commerce</span>
+            <button type="button" id="menu" aria-label="Open navigation menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="project.html">Join</a></li>
+                    <li><a href="project.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/chamber-hero.jpg" alt="Auckland Chamber of Commerce" class="hero-image" loading="lazy">
+            <div class="hero-text">
+                <button>Keynote Tickets</button>
+            </div>
+        </div>
+        <h1>Home</h1>
+        <div class="menu">
+		<button id="grid">Grid</button>
+		<button id="list">List</button>
+	    </div>
+        <div id="cards"></div>
+    </main>
+
+    <footer>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook" width="50">
+            </a>
+            <a href="https://github.com/thk3306/wdd231">
+                <img src="images/github.svg" alt="Github" width="50">
+            </a>
+            <a href="https://nz.linkedin.com/">
+                <img src="images/linkedin.svg" alt="linkedin" width="50">
+            </a>
+        </nav>
+        <p>WDD 231 Class Project | Emil Roding &copy; <span id="year"></span> Auckland Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
