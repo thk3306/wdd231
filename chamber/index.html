@@ -39,17 +39,27 @@
 
     <main>
         <div class="hero">
-            <img src="images/chamber-hero.jpg" alt="Auckland Chamber of Commerce" class="hero-image" loading="lazy">
-            <div class="hero-text">
-                <button>Keynote Tickets</button>
-            </div>
+            <img src="images/nz.webp" alt="New Zealand" class="hero-image" loading="lazy">
+            <button id="hero-button" class="hero-button" href="join.html">Join Us</button>
         </div>
         <h1>Home</h1>
-        <div class="menu">
-		<button id="grid">Grid</button>
-		<button id="list">List</button>
-	    </div>
+        <div class="home-content">
+        <section class="events">
+            <h2>Upcoming Events</h2>
+        </section>
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <img src="images/weather-icon.svg" alt="Weather Icon" id="weather-icon">
+                <span id="temperature">--°C</span>
+                <span id="condition">Loading...</span>
+            </div>
+        </section>
+        <section class ="forecast">
+            <h2>Weather Forecast</h2>
+        </section>
         <div id="cards"></div>
+        </div>
     </main>
 
     <footer>

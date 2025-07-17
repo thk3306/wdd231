@@ -137,9 +137,47 @@ header span {
     flex-grow: 1;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 main section > p {
     font-size: smaller;
     text-align: center;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.events, .current-weather, .forecast {
+   padding: 20px;
+   background-color: var(--red);
 }
 
 section img {
