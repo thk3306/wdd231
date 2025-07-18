@@ -40,7 +40,7 @@
     <main>
         <div class="hero">
             <img src="images/nz.webp" alt="New Zealand" class="hero-image" loading="lazy">
-            <button id="hero-button" class="hero-button" href="join.html">Join Us</button>
+            <a id="hero-button" class="hero-button" href="join.html">Join Us</a>
         </div>
         <h1>Home</h1>
         <div class="home-content">
@@ -50,16 +50,17 @@
         <section class="current-weather">
             <h2>Current Weather</h2>
             <div class="weather-info">
-                <img src="images/weather-icon.svg" alt="Weather Icon" id="weather-icon">
-                <span id="temperature">--°C</span>
-                <span id="condition">Loading...</span>
+                <img id="weather-icon" src="images/favicon.ico" alt="Weather icon"><br>
+                <span id="current-temp">Loading...</span>
+                <br><span id="condition">Loading...</span>
             </div>
         </section>
         <section class ="forecast">
             <h2>Weather Forecast</h2>
+            <span id="forecast"></span>
         </section>
-        <div id="cards"></div>
         </div>
+        <div id="cards"></div>
     </main>
 
     <footer>
