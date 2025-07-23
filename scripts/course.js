@@ -90,6 +90,9 @@ const courses = [
 		const courseElement = document.createElement('article');
 		courseElement.classList.add('course');
 		courseElement.innerHTML = `${course.subject} ${course.number}`
+        courseElement.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
 		return courseElement;
 	}
     allButton.addEventListener('click', () => {
@@ -139,4 +142,23 @@ const courses = [
         main.appendChild(courseElement);
     });
     creditTotal.textContent = `The Total Number of Credits of the Courses Listed below is ${courses.reduce((total, course) => total + course.credits, 0)}`;
+
+    const courseDetails = document.getElementById('course-details');
+
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = '';
+        courseDetails.innerHTML = `<button id="closeModal">❌</button>
+        <h2> ${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>`;
+        courseDetails.showModal();
+
+        const closeModal = document.getElementById('closeModal');
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        });
+    }
 
