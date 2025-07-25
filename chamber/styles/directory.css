@@ -342,17 +342,13 @@ section img {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInDown 1s ease-out forwards;
+    animation: fadeInDown 0.5s ease-out forwards;
 }
 
 #membership-levels p {
     margin: 0.5rem 0;
     flex-grow:0;
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: slideInLeft 1s ease-out forwards;
+    animation: slideInLeft 0.5s ease-out forwards;
 }
 
 @keyframes fadeInDown {
@@ -397,10 +393,19 @@ button.open-button {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: popIn 2s ease-out forwards;
-    transition: all 0.3s ease;
+    animation: popIn 0.5s ease-out forwards;
+}
+
+button.close-button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 dialog {
