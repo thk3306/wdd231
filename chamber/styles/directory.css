@@ -342,11 +342,50 @@ section img {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-out forwards;
 }
 
 #membership-levels p {
     margin: 0.5rem 0;
     flex-grow:0;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 button.open-button {
@@ -358,6 +397,10 @@ button.open-button {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 2s ease-out forwards;
+    transition: all 0.3s ease;
 }
 
 dialog {
