@@ -54,8 +54,6 @@ const displayPlaces = (places) => {
     })
 }
 
-displayPlaces(places.auckland_attractions);
-
 const currentVisit = Date.now();
 const lastVisitTime = localStorage.getItem('lastVisitTime');
 
