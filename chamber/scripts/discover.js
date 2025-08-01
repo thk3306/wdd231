@@ -6,9 +6,15 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-import { places } from "../data/places.mjs";
+const url = 'https://thk3306.github.io/wdd231/chamber/data/places.json';
 
 const cards = document.querySelector('#places');
+
+async function getPlacesData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayPlaces(data);
+}
 
 const displayPlaces = (places) => {
     places.forEach((place) => {

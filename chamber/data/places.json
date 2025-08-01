@@ -1,5 +1,4 @@
-export const places = {
-  "auckland_attractions": [
+[
     {
       "name": "Sky Tower",
       "address": "Corner Victoria and Federal Streets, Auckland CBD",
@@ -57,4 +56,3 @@ export const places = {
       "link": "https://www.aucklandnz.com/visit/where-to-go/mission-bay"
     }
   ]
-}
