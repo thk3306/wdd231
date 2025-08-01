@@ -16,6 +16,8 @@ async function getPlacesData() {
     displayPlaces(data);
 }
 
+getPlacesData();
+
 const displayPlaces = (places) => {
     places.forEach((place) => {
         const card = document.createElement('section');
