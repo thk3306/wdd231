@@ -270,6 +270,51 @@ section img {
     margin-bottom: 1rem;
 }
 
+.places section {
+    margin : 1rem 8px;
+    border : 1px solid #ccc;
+    background-color: var(--color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address"
+        "learn-more";
+}
+
+.places section #name { grid-area: name;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+.places section #image { grid-area: image; 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+.places section #description { grid-area: description; 
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.places section #address { grid-area: address; 
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+}
+.places section #learn-more { grid-area: learn-more; 
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
 #thankyou p, h2 {
     text-align: center;
 }
