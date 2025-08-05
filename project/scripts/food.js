@@ -6,7 +6,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-const url = 'https://thk3306.github.io/wdd231/project/data/places.json';
+const url = 'https://thk3306.github.io/wdd231/project/data/food.json';
 
 const cards = document.querySelector('#places');
 
@@ -53,23 +53,3 @@ const displayPlaces = (places) => {
         cards.classList.add('places');
     })
 }
-
-const currentVisit = Date.now();
-const lastVisitTime = localStorage.getItem('lastVisitTime');
-
-if (!lastVisitTime) {
-    lastvisit.textContent = "Welcome! Let us know if you have any questions.";
-} else {
-    const timeDifference = currentVisit - parseInt(lastVisitTime);
-    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    
-    if (daysDifference < 1) {
-        lastvisit.textContent = "Back so soon! Awesome!";
-    } else if (daysDifference === 1) {
-        lastvisit.textContent = "You last visited 1 day ago.";
-    } else {
-        lastvisit.textContent = `You last visited ${daysDifference} days ago.`;
-    }
-}
-
-localStorage.setItem('lastVisitTime', currentVisit);
