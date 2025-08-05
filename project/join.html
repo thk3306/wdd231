@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emil Roding's WDD 231 | Auckland Chamber of Commerce Project">
+    <meta name="author" content="Emil's Web Development Class WDD 231 Auckland Chamber of Commerce Project">
+    <title>New Zealand Tourism Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Auckland Chamber of Commerce Join Page">
+    <meta property="og:description" content="Discover and connect with businesses in the Auckland Chamber of Commerce Join Page.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/thk3306/wdd231/main/images/chamber-logo.png">
+    <meta property="og:url" content="https://thk3306.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.svg" alt="New Zealand Flag" id="logo" loading="lazy">
+            <span>New Zealand Tourism</span>
+            <button type="button" id="menu" aria-label="Open navigation menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sights.html">Sights</a></li>
+                    <li><a href="food.html" >Food</a></li>
+                    <li><a href="join.html" class="current-page">Join Us!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <img src="images/nz.webp" alt="Sign Up Image" class="signup-image" loading="lazy">
+        <h1 id="join">Join New Zealand Tourism for Your Next Big Adventure!</h1>
+        <div class="grid">
+        <form method="get" action="thankyou.html" class="wf1">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" autocomplete="given-name" title="Enter your first name" required>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" autocomplete="family-name" title="Enter your last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" title="Enter your email address" placeholder="you@example.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter your phone number" required>
+
+            <span><br>Membership Level</span>
+            <label><input type="radio" name="level" value="Kiwi Explorer" required>Kiwi Explorer</label>
+            <label><input type="radio" name="level" value="Bronze Adventure">Bronze Adventure</label>
+            <label><input type="radio" name="level" value="Silver Explorer">Silver Explorer</label>
+            <label><input type="radio" name="level" value="Gold Adventurer">Gold Adventurer</label>
+
+            <label for="description">Tell us About Your Adventuring Needs</label>
+            <textarea id="description" title="Enter Adventuring Needs" name="description" rows="5" cols="50" placeholder="Write your adventuring needs here..."></textarea>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+
+        </fieldset>
+        <input type="submit" value="Sign Up">
+        </form>
+        <div id="membership-levels">
+            <h2>Tourism Membership Levels</h2>
+            <p>Kiwi Explorer Membership Level</p>
+            <button class="button open-button" popovertarget="kiwi">Learn More</button>
+            <br> <br>
+            <dialog class="modal" id="kiwi" popover>
+            <button class="close-button" popovertarget="kiwi" popovertargetaction="hide">❌</button>
+            <h2>Kiwi Explorer Membership</h2>
+            <p>Free for New Zealand residents. Access to local adventure guides and community events.</p>
+            </dialog>
+            <p>Bronze Adventure Membership Level</p>
+            <button class="button open-button" popovertarget="bronze">Learn More</button>
+            <br> <br>
+            <dialog class="modal" id="bronze" popover>
+            <button class="close-button" popovertarget="bronze" popovertargetaction="hide">❌</button>
+            <h2>Bronze Adventure Membership</h2>
+            <p>$150/year. Access to basic touring guides and 10% discount on selected activities.</p>
+            </dialog>
+            <p>Silver Explorer Membership Level</p>
+            <button class="button open-button" popovertarget="silver">Learn More</button>
+            <br> <br>
+            <dialog class="modal" id="silver" popover>
+            <button class="close-button" popovertarget="silver" popovertargetaction="hide">❌</button>
+            <h2>Silver Explorer Membership</h2>
+            <p>$350/year. Priority booking, 20% discount on activities, and exclusive access to member-only tours.</p>
+            </dialog>
+            <p>Gold Adventurer Membership Level</p>
+            <button class="button open-button" popovertarget="gold">Learn More</button>
+            <br> <br>
+            <dialog class="modal" id="gold" popover>
+            <button class="close-button" popovertarget="gold" popovertargetaction="hide">❌</button>
+            <h2>Gold Adventurer Membership</h2>
+            <p>$650/year. All benefits plus personalized itinerary planning, 30% discount, and VIP experiences.</p>
+            </dialog>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook" width="50">
+            </a>
+            <a href="https://github.com/thk3306/wdd231">
+                <img src="images/github.svg" alt="Github" width="50">
+            </a>
+            <a href="https://nz.linkedin.com/">
+                <img src="images/linkedin.svg" alt="linkedin" width="50">
+            </a>
+        </nav>
+        <p>WDD 231 Class Project | Emil Roding &copy; <span id="year"></span> Auckland Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><span id="lastvisit"></span></p>
+    </footer>
+</body>
+</html>

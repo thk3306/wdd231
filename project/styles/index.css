@@ -180,6 +180,10 @@ section img {
     border: 1px solid #111;
 }
 
+#join {
+    text-align: center;
+}
+
 #grid, #list {
     background-color: var(--red);
     color: white;

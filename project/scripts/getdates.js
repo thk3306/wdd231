@@ -22,13 +22,13 @@ const currentVisit = Date.now();
 const lastVisitTime = localStorage.getItem('lastVisitTime');
 
 if (!lastVisitTime) {
-    lastvisit.textContent = "Welcome! Let us know if you have any questions.";
+    lastvisit.textContent = "Welcome to our site! This is your first visit.";
 } else {
     const timeDifference = currentVisit - parseInt(lastVisitTime);
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     
     if (daysDifference < 1) {
-        lastvisit.textContent = "Back so soon! Awesome!";
+        lastvisit.textContent = "Welcome back! You last visited today.";
     } else if (daysDifference === 1) {
         lastvisit.textContent = "You last visited 1 day ago.";
     } else {
