@@ -1,3 +1,5 @@
+import { initializeHamburgerMenu } from './navigation.js';
+
 const getString = window.location.search;
 console.log(getString);
 
@@ -13,11 +15,6 @@ document.querySelector('#thankyou').innerHTML = `
 <p> Time of Submission: ${myInfo.get('timestamp')}</p>
 `;
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+// Initialize navigation
+initializeHamburgerMenu();
 

@@ -1,11 +1,9 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+import { initializeHamburgerMenu } from './navigation.js';
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+// Initialize navigation
+initializeHamburgerMenu();
 
+// Weather API functionality
 const currentTemp = document.querySelector("#temperature");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#conditions");
@@ -21,18 +19,19 @@ async function apiFetch() {
         } else {
             throw Error(await response.text());
         }
-
     } catch (error) {
         console.log(error);
     }
-    }
-    apiFetch();
+}
 
-    function displayResults(data) {
-        currentTemp.innerHTML = `${data.main.temp}&deg;C\n`;
-        const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        let desc = data.weather[0].description;
-        weatherIcon.setAttribute("src", iconsrc);
-        weatherIcon.setAttribute("alt", desc);
-        captionDesc.textContent = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
-    }
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;C\n`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", desc);
+    captionDesc.textContent = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
+}
+
+// Initialize weather API
+apiFetch();

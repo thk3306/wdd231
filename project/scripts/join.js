@@ -1,9 +1,7 @@
+import { initializeHamburgerMenu } from './navigation.js';
+
+// Set timestamp when page loads
 document.getElementById('timestamp').value = new Date().toISOString();
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+// Initialize navigation
+initializeHamburgerMenu();

@@ -1,10 +1,7 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+import { initializeHamburgerMenu } from './navigation.js';
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+// Initialize navigation
+initializeHamburgerMenu();
 
 const url = 'https://thk3306.github.io/wdd231/project/data/food.json';
 
