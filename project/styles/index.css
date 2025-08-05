@@ -434,10 +434,10 @@ nav.sociallinks {
   }
     
   .header-container nav {
-    width: 100%;
+    width: 103%;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -11px;
     background-color: var(--color);
     z-index: 1000;
   }
