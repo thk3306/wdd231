@@ -384,7 +384,6 @@ footer {
     background: var(--color);
     padding: 2rem;
     color: white;
-    border-top: 5px solid var(--red);
 }
 
 footer p {
