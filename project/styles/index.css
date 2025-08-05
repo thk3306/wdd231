@@ -44,10 +44,6 @@ button#menu {
     content: "❌";
 }
 
-#places div {
-    height: 100%;
-}
-
 .navigation {
     list-style: none;
     display: none;
