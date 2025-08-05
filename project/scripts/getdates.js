@@ -23,6 +23,8 @@ export function setLastModified() {
 // Function to handle last visit tracking
 export function handleLastVisit() {
     const currentVisit = Date.now();
+    const totalVisits = localStorage.getItem('totalVisits') || 0;
+    localStorage.setItem('totalVisits', parseInt(totalVisits) + 1);
     const lastVisitTime = localStorage.getItem('lastVisitTime');
     const lastvisitElement = document.querySelector("#lastvisit");
     
@@ -35,11 +37,11 @@ export function handleLastVisit() {
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         
         if (daysDifference < 1) {
-            lastvisitElement.textContent = "Welcome back! You last visited today.";
+            lastvisitElement.textContent = `Welcome back! You last visited today. Your Total visits: ${localStorage.getItem('totalVisits') || 0}`;
         } else if (daysDifference === 1) {
-            lastvisitElement.textContent = "You last visited 1 day ago.";
+            lastvisitElement.textContent = `You last visited 1 day ago. Your Total visits: ${localStorage.getItem('totalVisits') || 0}`;
         } else {
-            lastvisitElement.textContent = `You last visited ${daysDifference} days ago.`;
+            lastvisitElement.textContent = `You last visited ${daysDifference} days ago. Your Total visits: ${localStorage.getItem('totalVisits') || 0}`;
         }
     }
 
