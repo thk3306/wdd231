@@ -23,7 +23,6 @@ const displayPlaces = (places) => {
         const card = document.createElement('section');
         const name = document.createElement('h2');
         const image = document.createElement('img');
-        const address = document.createElement('address');
         const description = document.createElement('p');
         const button = document.createElement('button');
 
@@ -35,8 +34,6 @@ const displayPlaces = (places) => {
         image.setAttribute('width', '200');
         image.setAttribute('height', '300');
         image.id = "image";
-        address.textContent = `Address: ${place.address}`;
-        address.id = "address";
         description.textContent = `Description: ${place.description}`;
         description.id = "description";
         button.textContent = "Learn More";
@@ -47,7 +44,6 @@ const displayPlaces = (places) => {
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(description);
-        card.appendChild(address);
         card.appendChild(button);
         cards.appendChild(card);
         cards.classList.add('places');
