@@ -25,6 +25,10 @@ a {
     background-color: var(--color);
 }
 
+.index {
+    text-align: center;
+}
+
 button#menu {
     font-size: 1.5rem;
     border: 0;
