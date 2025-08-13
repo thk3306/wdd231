@@ -12,4 +12,27 @@
 .places section #image:hover {
     transform: scale(1.05);
 }
+
+/* Medium screen styles for discover page */
+.place-card {
+    grid-template-areas: 
+    "image name"
+    "image description"
+    "image address"
+    "image learn-more";
+}
+
+.place-image {
+    width: 300px;
+}
+
+.place-image:hover {
+    transform: scale(1.05);
+}
+
+.places-container {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
 }
